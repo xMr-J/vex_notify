@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+    <title>VEX Notify</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+    <main
+        id="vex-notify-root"
+        aria-live="polite"
+    >
+        <section
+            id="toast-region"
+            class="notify-region notify-region--toast"
+            aria-label="Notifications"
+        ></section>
+
+        <section
+            id="anchor-region"
+            class="notify-region notify-region--anchor"
+        ></section>
+
+        <section
+            id="alert-region"
+            class="notify-region notify-region--alert"
+            aria-live="assertive"
+        ></section>
+
+        <section
+            id="progress-region"
+            class="notify-region notify-region--progress"
+        ></section>
+
+        <section
+            id="modal-region"
+            class="modal-region"
+            aria-live="assertive"
+        ></section>
+    </main>
+
+    <script
+        src="app.js"
+        defer
+    ></script>
+</body>
+</html>
